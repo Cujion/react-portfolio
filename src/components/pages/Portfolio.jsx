@@ -82,13 +82,15 @@ function Portfolio() {
                 />
               </div>
               <div className="card-content">
+              <span class="card-more activator grey-text text-darken-4"><i
+            class="material-icons right">more_vert</i></span>
                 <a
                   style={styles.aTag}
                   href={project.repo}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <span className="card-title activator grey-text text-darken-4">
+                  <span className="card-icon activator grey-text text-darken-4">
                     <AiFillGithub style={styles.icons} />
                     {project.title}
                   </span>

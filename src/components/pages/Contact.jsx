@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 const styles = {
   container: {
@@ -9,6 +9,10 @@ const styles = {
     padding: '10px'
   },
 };
+
+const handleSubmit = () => {
+  
+}
 
 function Contact() {
   return (
