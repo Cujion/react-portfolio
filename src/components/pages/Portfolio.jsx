@@ -1,9 +1,9 @@
 import React from "react";
 
-function Contact() {
+function Portfolio() {
   return (
-    <div>
-      <h1>Contact Page</h1>
+    <div className="container">
+      <h1 className="center-align">Portfolio Page</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
@@ -16,4 +16,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default Portfolio;

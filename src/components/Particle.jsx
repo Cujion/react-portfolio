@@ -21,6 +21,10 @@ function Particle() {
         loaded={particlesLoaded}
 
         options={{
+            "fullScreen": {
+            "enable": true,
+            "zIndex": -1
+            },
             background: {
                 color: {
                     value: "#9b8b74",
@@ -69,8 +73,8 @@ function Particle() {
                     outModes: {
                         default: "bounce",
                     },
-                    random: false,
-                    speed: 6,
+                    random: true,
+                    speed: 3,
                     straight: false,
                 },
                 number: {
