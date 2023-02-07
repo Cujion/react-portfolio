@@ -59,8 +59,8 @@ const projects = [
 function Portfolio() {
   return (
     <div className="container">
-      {projects.map((project) => (
-        <div className="row">
+      <div className="row">
+        {projects.map((project) => (
           <div className="col s12 m6 l4">
             <div className="card small hoverable">
               <div className="card-image waves-effect waves-block waves-light">
@@ -85,8 +85,8 @@ function Portfolio() {
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 }

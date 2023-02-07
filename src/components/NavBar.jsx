@@ -1,8 +1,14 @@
 import React from "react";
 
+const styles = {
+    navbar: {
+        marginBottom: "30px"
+    }
+}
+
 function NavBar({ currentPage, handlePageChange, pages }) {
   return (
-    <nav>
+    <nav style={styles.navbar}>
         <div className="nav-wrapper grey darken-2">
         <a href="/" class="brand-logo left">Chris' Portfolio</a>
     <ul id="nav-mobile" className="right">
