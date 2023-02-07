@@ -4,29 +4,47 @@ function Contact() {
   return (
     <div className="container">
       <section id="new-post" className="row card">
-        <form id="slide-out" />
-        <h5 className="center">Contact Me</h5>
-        <div className="row">
-          <div className="input-field col s12 m6">
-            <input id="First Name" type="text" />
-            <label for="text">First Name</label>
+        <form>
+          <h5 className="center">Contact Me</h5>
+          <div className="row">
+            <div className="input-field col s12 m6">
+              <input placeholder="First Name" id="First Name" type="text" />
+            </div>
+            <div className="input-field col s12 m6">
+              <input placeholder="Last Name" id="Last Name" type="text" />
+            </div>
           </div>
-          <div className="input-field col s12 m6">
-            <input id="Last Name" type="text" />
-            <label for="text">Last Name</label>
+          <div className="row">
+            <div className="input-field col s12">
+              <input
+                placeholder="Email"
+                id="email"
+                type="email"
+                className="validate"
+              ></input>
+            </div>
           </div>
-          <div className="input-field col s12">
-            <input id="email" type="email" className="validate" />
-            <label for="email">Email</label>
+          <div className="row">
+            <div className="input-field col s12">
+              <textarea
+                placeholder="Message"
+                id="textarea1"
+                className="materialize-textarea"
+              />
+            </div>
           </div>
-        </div>
-        <div className="row">
-          <div className="input-field col s12">
-            <textarea id="textarea1" className="materialize-textarea" />
-            <label for="textarea1">Message</label>
-          </div>
-        </div>
+        </form>
       </section>
+      <div className="row">
+        <button
+          class="btn waves-effect waves-light col s2 offset-s5"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
     </div>
   );
 }
