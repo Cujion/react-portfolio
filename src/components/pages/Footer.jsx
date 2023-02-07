@@ -5,8 +5,7 @@ const styles = {
     footer: {
         display: 'inline-flex',
         justifyContent: 'center',
-        position: 'absolute',
-        bottom: 0,
+        fixed: 'bottom',
         width: '100%',
         padding: '5px'
       },
