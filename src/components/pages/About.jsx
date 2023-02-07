@@ -1,8 +1,14 @@
 import React from "react";
 
+const styles = {
+  container: {
+    minHeight: "100vh",
+  },
+};
+
 const About = () => {
   return (
-    <div>
+    <div style={styles.container}>
       <h1>About Page</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.

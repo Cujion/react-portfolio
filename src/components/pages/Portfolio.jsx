@@ -9,6 +9,16 @@ const styles = {
   aTag: {
     color: "#ffffff",
   },
+  container: {
+    minHeight: "100vh",
+    textAlign: "center",
+  },
+  cardImage: {
+    height: "500px",
+    display: "flex",
+    alignItems: "center",
+    justifyItems: "center",
+  },
 };
 
 const projects = [
@@ -58,13 +68,14 @@ const projects = [
 
 function Portfolio() {
   return (
-    <div className="container">
+    <div className="container" style={styles.container}>
       <div className="row">
         {projects.map((project) => (
-          <div className="col s12 m6 l4">
+          <div className="col s12 m6">
             <div className="card small hoverable">
               <div className="card-image waves-effect waves-block waves-light">
                 <img
+                  style={styles.cardImage}
                   className="activator"
                   src={project.image}
                   alt={project.title}

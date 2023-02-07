@@ -1,8 +1,14 @@
-import React from 'react'
+import React from "react";
+
+const styles = {
+  container: {
+    minHeight: "100vh",
+  },
+};
 
 function Resume() {
   return (
-    <div>
+    <div style={styles.container}>
       <h1>Resume Page</h1>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
@@ -13,7 +19,7 @@ function Resume() {
         in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
       </p>
     </div>
-  )
+  );
 }
 
-export default Resume
+export default Resume;
