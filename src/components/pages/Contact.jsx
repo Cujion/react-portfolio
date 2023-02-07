@@ -5,13 +5,16 @@ const styles = {
     minHeight: "100vh",
     marginTop: "25vh",
   },
+  sectionStyle: {
+    padding: '10px'
+  },
 };
 
 function Contact() {
   return (
     <div className="container" style={styles.container}>
       <div>
-        <section id="new-post" className="row card">
+        <section id="new-post" className="row card" style={styles.sectionStyle}>
           <form>
             <h5 className="center">Contact Me</h5>
             <div className="row">
