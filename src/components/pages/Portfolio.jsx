@@ -65,7 +65,7 @@ const projects = [
       "This is a Daily Organizing Planner that allows you to plan out your daily schedule and save that input to your local storage upon clicking the save icon on the right side of each section. This script uses Dayjs to update the local date and time in order to color coordinate each time slot.",
   },
   {
-    id: 5,
+    id: 6,
     title: "Trivia Challenge",
     image:
       "https://github.com/Cujion/Knowledge-Quiz/raw/main/assets/images/start.png",
@@ -80,7 +80,7 @@ function Portfolio() {
     <div className="container" style={styles.container}>
       <div className="row">
         {projects.map((project) => (
-          <div className="col s12 m6">
+          <div key={project.id} className="col s12 m6">
             <div className="card small hoverable" style={styles.card}>
               <div className="card-image waves-effect waves-block waves-light">
                 <img

@@ -56,7 +56,7 @@ function Contact() {
         </section>
         <div className="row">
           <button onClick={handleSubmit}
-            className="btn waves-effect waves-light col s2 offset-s5"
+            className="btn waves-effect waves-light col s6 offset-s3 l4 offset-l4"
             type="button"
             name="action"
           >

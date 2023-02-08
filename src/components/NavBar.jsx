@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const styles = {
   navbar: {
@@ -6,15 +7,13 @@ const styles = {
   },
 };
 
-const sidenavSlideOut = () => {
-  console.log("CLICKED");
-  document.addEventListener("DOMContentLoaded", function () {
-    var elems = document.querySelectorAll(".slide-out");
-    var instances = window.M.Sidenav.init(elems);
-  });
-};
-
 function NavBar({ currentPage, handlePageChange, pages }) {
+
+  useEffect(() => {
+    const leftNav = document.querySelector('#slide-out');
+    M.Sidenav.init(leftNav, {});
+  },[]);
+
   return (
     <nav style={styles.navbar}>
       <div className="nav-wrapper grey darken-2">
@@ -24,7 +23,6 @@ function NavBar({ currentPage, handlePageChange, pages }) {
         <a
           href="#"
           data-target="slide-out"
-          onClick={sidenavSlideOut}
           className="sidenav-trigger right"
         >
           <i className="material-icons">menu</i>
