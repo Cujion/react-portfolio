@@ -1,6 +1,9 @@
+// PULLING IN REQUIRED IMPORTS
 import React from "react";
+// IMPORTING REACT ICONS
 import { AiFillGithub } from "react-icons/ai";
 
+// ELEMENT STYLING
 const styles = {
   icons: {
     fontSize: "40px",
@@ -18,6 +21,7 @@ const styles = {
   },
 };
 
+// ARRAY OF OBJECTS ASSIGNED TO PROJECTS
 const projects = [
   {
     id: 1,
@@ -75,6 +79,7 @@ const projects = [
   },
 ];
 
+// FUNCTION TO MAP OVER EACH PROJECT AND STRUCTURE AND FORM HTML LAYOUT ON PORTFOLIO PAGE
 function Portfolio() {
   return (
     <div className="container" style={styles.container}>
