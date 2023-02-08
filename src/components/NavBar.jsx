@@ -24,7 +24,7 @@ function NavBar({ currentPage, handlePageChange, pages }) {
         <a href="/About" className="brand-logo left">
           Chris' Portfolio
         </a>
-        <a href="#" data-target="slide-out" className="sidenav-trigger right">
+        <a href="/" data-target="slide-out" className="sidenav-trigger right">
           <i className="material-icons">menu</i>
         </a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">
