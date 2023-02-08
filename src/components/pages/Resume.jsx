@@ -12,7 +12,7 @@ const styles = {
   icons: {
     fontSize: "40px",
     margin: "0 10",
-    align: "center"
+    align: "center",
   },
 };
 
@@ -25,13 +25,13 @@ function Resume() {
             <div className="card-image">
               <img src={resumePic} alt="resume" />
             </div>
-                <a
-                  href="https://drive.google.com/file/d/1aTCe-ZpjXTj_d9HddBnZoZduIVoF0EhE/view?usp=sharing"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <VscGoToFile style={styles.icons}/>
-                </a>
+            <a
+              href="https://drive.google.com/file/d/1aTCe-ZpjXTj_d9HddBnZoZduIVoF0EhE/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <VscGoToFile style={styles.icons} />
+            </a>
           </div>
         </div>
       </div>

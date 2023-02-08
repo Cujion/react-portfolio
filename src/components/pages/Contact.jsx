@@ -6,22 +6,27 @@ const styles = {
     marginTop: "25vh",
   },
   sectionStyle: {
-    padding: '10px'
+    padding: "10px",
   },
 };
 
 const handleSubmit = () => {
-  let firstNameEl = document.querySelector('#first-name').value;
-  let lastNameEl = document.querySelector('#last-name').value;
-  let emailEl = document.querySelector('#email').value;
-  let messageEl = document.querySelector('#message').value;
+  let firstNameEl = document.querySelector("#first-name").value;
+  let lastNameEl = document.querySelector("#last-name").value;
+  let emailEl = document.querySelector("#email").value;
+  let messageEl = document.querySelector("#message").value;
 
-  if (firstNameEl !== "" || lastNameEl !== "" || emailEl !== "" || messageEl !== "") {
-    alert('Contact form submitted')
+  if (
+    firstNameEl !== "" ||
+    lastNameEl !== "" ||
+    emailEl !== "" ||
+    messageEl !== ""
+  ) {
+    alert("Contact form submitted");
   } else {
-    alert('Must fill out form completely')
+    alert("Must fill out form completely");
   }
-}
+};
 
 function Contact() {
   return (
@@ -40,11 +45,7 @@ function Contact() {
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <input
-                  placeholder="Email"
-                  id="email"
-                  type="email"
-                ></input>
+                <input placeholder="Email" id="email" type="email"></input>
               </div>
             </div>
             <div className="row">
@@ -55,7 +56,8 @@ function Contact() {
           </form>
         </section>
         <div className="row">
-          <button onClick={handleSubmit}
+          <button
+            onClick={handleSubmit}
             className="btn waves-effect waves-light col s6 offset-s3 l4 offset-l4"
             type="button"
             name="action"

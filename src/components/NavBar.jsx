@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import M from 'materialize-css/dist/js/materialize.min.js';
+import M from "materialize-css/dist/js/materialize.min.js";
 
 const styles = {
   navbar: {
@@ -8,11 +8,10 @@ const styles = {
 };
 
 function NavBar({ currentPage, handlePageChange, pages }) {
-
   useEffect(() => {
-    const leftNav = document.querySelector('#slide-out');
+    const leftNav = document.querySelector("#slide-out");
     M.Sidenav.init(leftNav, {});
-  },[]);
+  }, []);
 
   return (
     <nav style={styles.navbar}>
@@ -20,11 +19,7 @@ function NavBar({ currentPage, handlePageChange, pages }) {
         <a href="/About" className="brand-logo left">
           Chris' Portfolio
         </a>
-        <a
-          href="#"
-          data-target="slide-out"
-          className="sidenav-trigger right"
-        >
+        <a href="#" data-target="slide-out" className="sidenav-trigger right">
           <i className="material-icons">menu</i>
         </a>
         <ul id="nav-mobile" className="right hide-on-med-and-down">

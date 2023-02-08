@@ -19,7 +19,12 @@ const About = () => {
       <div className="col s12 m7 offset-m3 l4 offset-l4">
         <div className="card hoverable">
           <div className="card-image">
-            <img src={profilePic} alt="Profile pic of myself" style={styles.cardImage} draggable="false"/>
+            <img
+              src={profilePic}
+              alt="Profile pic of myself"
+              style={styles.cardImage}
+              draggable="false"
+            />
           </div>
           <div className="card-content">
             <p>

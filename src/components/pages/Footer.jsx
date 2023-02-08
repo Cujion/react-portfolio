@@ -27,7 +27,6 @@ const styles = {
   },
 };
 
-
 class Footer extends Component {
   render() {
     return (

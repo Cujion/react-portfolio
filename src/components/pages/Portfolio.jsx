@@ -4,18 +4,18 @@ import { AiFillGithub } from "react-icons/ai";
 const styles = {
   icons: {
     fontSize: "40px",
-    margin: "0 10"
+    margin: "0 10",
   },
   aTag: {
-    color: "#000000"
+    color: "#000000",
   },
   container: {
     minHeight: "100vh",
-    textAlign: "center"
+    textAlign: "center",
   },
   card: {
-    height: "400px"
-  }
+    height: "400px",
+  },
 };
 
 const projects = [
@@ -94,9 +94,9 @@ function Portfolio() {
                   {project.title}
                   <i className="material-icons right">more_vert</i>
                 </span>
-                  <a href={project.repo} style={styles.aTag}>
-                    <AiFillGithub style={styles.icons} />
-                  </a>
+                <a href={project.repo} style={styles.aTag}>
+                  <AiFillGithub style={styles.icons} />
+                </a>
               </div>
               <div className="card-reveal">
                 <span className="card-title grey-text text-darken-4">

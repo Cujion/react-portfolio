@@ -6,9 +6,9 @@ import Footer from './components/pages/Footer';
 function App() {
   return (
     <>
-    <PortfolioContainer />
-    <Footer />
-    <Particle/>
+      <PortfolioContainer />
+      <Footer />
+      <Particle />
     </>
   );
 }
