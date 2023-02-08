@@ -1,18 +1,23 @@
+// PULLING IN REQUIRED IMPORTS
 import React, { useEffect } from "react";
 import M from "materialize-css/dist/js/materialize.min.js";
 
+// ELEMENT STYLING
 const styles = {
   navbar: {
     marginBottom: "30px",
   },
 };
 
+// CREATING A FUNCTION THAT TAKES IN 3 PARAMETERS
 function NavBar({ currentPage, handlePageChange, pages }) {
+  // INITALIZING USE EFFECT TO TARGET SLIDE-OUT ID TO ALLOW FOR MEDIUM/SMALL SCREEN DISPLAYS TO HAVE A POP OUT SIDENAV
   useEffect(() => {
     const leftNav = document.querySelector("#slide-out");
     M.Sidenav.init(leftNav, {});
   }, []);
 
+  // RENDERING HTML PAGE LAYOUT FOR PORTFOLIO PAGE
   return (
     <nav style={styles.navbar}>
       <div className="nav-wrapper grey darken-2">
