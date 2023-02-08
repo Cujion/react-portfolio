@@ -20,7 +20,7 @@ function NavBar({ currentPage, handlePageChange, pages }) {
                 href={`#${page.toLowerCase()}`}
                 onClick={() => handlePageChange(page)}
                 className={
-                  currentPage === page ? "nav-link active" : "nav-link"
+                  currentPage === page ? "nav-link" : "nav-link"
                 }
               >
                 {page}

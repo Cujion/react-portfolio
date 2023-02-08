@@ -7,14 +7,16 @@ const styles = {
     minHeight: "100vh",
   },
   imageStyle: {
-    height: "700px",
+    height: "600px",
+    width: "528px",
+    backgroundColor: "white"
   }
 };
 
 const About = () => {
   return (
     <div class="row" style={styles.wrapper}>
-      <div class="col s8 offset-s2">
+      <div class="col s4 offset-s4">
         <div class="card hoverable">
           <div class="card-image">
             <img src={profilePic} alt="Profile picture of myself" style={styles.imageStyle} draggable="false"/>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const styles = {
   container: {
@@ -11,7 +11,16 @@ const styles = {
 };
 
 const handleSubmit = () => {
-  
+  let firstNameEl = document.querySelector('#first-name').value;
+  let lastNameEl = document.querySelector('#last-name').value;
+  let emailEl = document.querySelector('#email').value;
+  let messageEl = document.querySelector('#message').value;
+
+  if (firstNameEl !== "" || lastNameEl !== "" || emailEl !== "" || messageEl !== "") {
+    alert('Success')
+  } else {
+    alert('Must fill out form completely')
+  }
 }
 
 function Contact() {
@@ -23,10 +32,10 @@ function Contact() {
             <h5 className="center">Contact Me</h5>
             <div className="row">
               <div className="input-field col s12 m6">
-                <input placeholder="First Name" id="First Name" type="text" />
+                <input placeholder="First Name" id="first-name" type="text" />
               </div>
               <div className="input-field col s12 m6">
-                <input placeholder="Last Name" id="Last Name" type="text" />
+                <input placeholder="Last Name" id="last-name" type="text" />
               </div>
             </div>
             <div className="row">
@@ -35,21 +44,20 @@ function Contact() {
                   placeholder="Email"
                   id="email"
                   type="email"
-                  className="validate"
                 ></input>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
-                <textarea placeholder="Message" id="textarea1" rows="6" />
+                <textarea placeholder="Message" id="message" rows="6" />
               </div>
             </div>
           </form>
         </section>
         <div className="row">
-          <button
+          <button onClick={handleSubmit}
             class="btn waves-effect waves-light col s2 offset-s5"
-            type="submit"
+            type="button"
             name="action"
           >
             Submit
