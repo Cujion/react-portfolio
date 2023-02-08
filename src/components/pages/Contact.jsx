@@ -17,7 +17,7 @@ const handleSubmit = () => {
   let messageEl = document.querySelector('#message').value;
 
   if (firstNameEl !== "" || lastNameEl !== "" || emailEl !== "" || messageEl !== "") {
-    alert('Success')
+    alert('Contact form submitted')
   } else {
     alert('Must fill out form completely')
   }
