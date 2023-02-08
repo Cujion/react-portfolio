@@ -6,20 +6,21 @@ const styles = {
   wrapper: {
     minHeight: "100vh",
   },
-  imageStyle: {
-    height: "600px",
-    width: "528px",
-    backgroundColor: "white"
-  }
+  cardImage: {
+    height: "500px",
+    display: "flex",
+    alignItems: "center",
+    justifyItems: "center",
+  },
 };
 
 const About = () => {
   return (
     <div class="row" style={styles.wrapper}>
-      <div class="col s4 offset-s4">
+      <div class="col s12 m7 offset-m3 l4 offset-l4">
         <div class="card hoverable">
           <div class="card-image">
-            <img src={profilePic} alt="Profile picture of myself" style={styles.imageStyle} draggable="false"/>
+            <img src={profilePic} alt="Profile picture of myself" style={styles.cardImage} draggable="false"/>
           </div>
           <div class="card-content">
             <p>
