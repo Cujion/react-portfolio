@@ -1,6 +1,8 @@
+// PULLING IN REQUIRED IMPORTS
 import React from "react";
 import profilePic from "../../assets/images/profilePic.png";
 
+// ELEMENT STYLING
 const styles = {
   wrapper: {
     minHeight: "100vh",
@@ -12,7 +14,7 @@ const styles = {
     justifyItems: "center",
   },
 };
-
+// ABOUT FUNCTION TO RENDER HTML ABOUT ME PAGE
 const About = () => {
   return (
     <div className="row" style={styles.wrapper}>
