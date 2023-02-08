@@ -1,6 +1,8 @@
+// IMPORTING IN REACT TSPARTICLES FOR ANIMATED BACKGROUND
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 
+// FUNCTION TO INITIALIZE BACKGROUND PARTICLE EFFECT
 function Particle() {
   const ParticlesInit = async (main) => {
     await loadFull(main);
@@ -8,6 +10,7 @@ function Particle() {
 
   const particlesLoaded = (container) => {};
 
+// RENDERING/STYLING FOR ANIMATED BACKGROUND
   return (
     <Particles
       id="tsparticles"
