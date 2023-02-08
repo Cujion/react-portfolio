@@ -1,5 +1,7 @@
+// PULLING IN REQUIRED IMPORTS
 import React from "react";
 
+// ELEMENT STYLING
 const styles = {
   container: {
     minHeight: "100vh",
@@ -10,12 +12,13 @@ const styles = {
   },
 };
 
+// FUNCTION TO HANDLE SUBMIT AND GRAB THE VALUES POSTED IN CONTACT FORM
 const handleSubmit = () => {
   let firstNameEl = document.querySelector("#first-name").value;
   let lastNameEl = document.querySelector("#last-name").value;
   let emailEl = document.querySelector("#email").value;
   let messageEl = document.querySelector("#message").value;
-
+// IF STATEMENT MAKING SURE ALL INPUT FIELDS ARE FILLED OUT
   if (
     firstNameEl !== "" ||
     lastNameEl !== "" ||
@@ -28,6 +31,7 @@ const handleSubmit = () => {
   }
 };
 
+// CONTACT FUNCTION TO RENDER HTML PAGE LAYOUT FOR CONTACT FORM PAGE 
 function Contact() {
   return (
     <div className="container" style={styles.container}>
