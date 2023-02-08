@@ -81,27 +81,27 @@ function Portfolio() {
       <div className="row">
         {projects.map((project) => (
           <div className="col s12 m6">
-            <div class="card small hoverable" style={styles.card}>
-              <div class="card-image waves-effect waves-block waves-light">
+            <div className="card small hoverable" style={styles.card}>
+              <div className="card-image waves-effect waves-block waves-light">
                 <img
-                  class="activator"
+                  className="activator"
                   src={project.image}
                   alt={project.title}
                 />
               </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
+              <div className="card-content">
+                <span className="card-title activator grey-text text-darken-4">
                   {project.title}
-                  <i class="material-icons right">more_vert</i>
+                  <i className="material-icons right">more_vert</i>
                 </span>
                   <a href={project.repo} style={styles.aTag}>
                     <AiFillGithub style={styles.icons} />
                   </a>
               </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
+              <div className="card-reveal">
+                <span className="card-title grey-text text-darken-4">
                   {project.title}
-                  <i class="material-icons right">close</i>
+                  <i className="material-icons right">close</i>
                 </span>
                 <p>{project.description}</p>
               </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import profilePic from "../../assets/images/profilePic.png";
-import { useState } from "react";
 
 const styles = {
   wrapper: {
@@ -16,13 +15,13 @@ const styles = {
 
 const About = () => {
   return (
-    <div class="row" style={styles.wrapper}>
-      <div class="col s12 m7 offset-m3 l4 offset-l4">
-        <div class="card hoverable">
-          <div class="card-image">
-            <img src={profilePic} alt="Profile picture of myself" style={styles.cardImage} draggable="false"/>
+    <div className="row" style={styles.wrapper}>
+      <div className="col s12 m7 offset-m3 l4 offset-l4">
+        <div className="card hoverable">
+          <div className="card-image">
+            <img src={profilePic} alt="Profile pic of myself" style={styles.cardImage} draggable="false"/>
           </div>
-          <div class="card-content">
+          <div className="card-content">
             <p>
               I am a 25 year old Gamer at heart that has been gaming since I can
               remember. I never really took the time to look into how a game was
