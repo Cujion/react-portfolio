@@ -1,4 +1,6 @@
+// PULLING IN REQUIRED IMPORTS
 import React, { Component } from "react";
+// PULLING IN REACT ICONS 
 import {
   AiFillGithub,
   AiFillLinkedin,
@@ -6,6 +8,7 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 
+// ELEMENT STYLING
 const styles = {
   footer: {
     display: "inline-flex",
@@ -27,6 +30,7 @@ const styles = {
   },
 };
 
+// RENDERING FOOTER HTML PAGE LAYOUT
 class Footer extends Component {
   render() {
     return (
