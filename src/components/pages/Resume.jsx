@@ -1,7 +1,10 @@
+// PULLING IN REQUIRED IMPORTS
 import React from "react";
 import resumePic from "../../assets/images/resume.png";
+// IMPORTING REACT ICONS
 import { VscGoToFile } from "react-icons/vsc";
 
+// ELEMENT STYLING
 const styles = {
   container: {
     minHeight: "100vh",
@@ -16,6 +19,7 @@ const styles = {
   },
 };
 
+// FUNCTION TO RENDER HTML RESUME PAGE LAYOUT
 function Resume() {
   return (
     <div className="container" style={styles.container}>
