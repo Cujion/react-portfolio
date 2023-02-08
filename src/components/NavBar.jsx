@@ -13,7 +13,8 @@ function NavBar({ currentPage, handlePageChange, pages }) {
         <a href="/" class="brand-logo left">
           Chris' Portfolio
         </a>
-        <ul id="nav-mobile" className="right">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" className="right hide-on-med-and-down">
           {pages.map((page) => (
             <li key={page} className="nav-item">
               <a
